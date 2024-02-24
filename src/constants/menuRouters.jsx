@@ -3,18 +3,19 @@ import {
     BorderOuterOutlined,
     HomeOutlined,
 } from "@ant-design/icons";
+import { Icons } from "./icons";
 
 export const menuBar = [
     {
         id: 1,
         title: "Home",
-        icon: <HomeOutlined />,
+        icon: <Icons.home />,
         path: "/home",
     },
     {
         id: 2,
         title: "Order",
-        icon: <BorderOuterOutlined />,
+        icon: <Icons.calc/>,
         path: "/order",
     },
     {
