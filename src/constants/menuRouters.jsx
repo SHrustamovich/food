@@ -42,4 +42,10 @@ export const menuBar = [
         icon: <BookOutlined />,
         path: "/settings",
     },
+    {
+        id: 7,
+        title: "Exit",
+        icon: <BookOutlined />,
+        path: "/exit",
+    },
 ];

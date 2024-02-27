@@ -3,6 +3,8 @@ import { Icons } from "../../constants/icons";
 import { menuBar } from "../../constants/menuRouters";
 import { SearchOutlined } from "@ant-design/icons";
 import { routers } from "../../constants/routers";
+import { Suspense } from "react";
+import Loading from "../../components/loading";
 
 const AppRouters = () => {
     const { pathname } = useLocation();
@@ -24,17 +26,18 @@ const AppRouters = () => {
                 </div>
             </div>
             <div className='flex flex-col w-full py-[24px]'>
-                <div className='flex justify-between px-[10px] text-white'>
+                <div className='flex justify-between pl-[10px] pr-[40px] text-white'>
                     <div>
                         <h1 className='capitalize'>
-                            {pathname.slice(1) == "home"
+                            {/* {pathname.slice(1) == "home"
                                 ? "Jaegar Resto"
-                                : pathname.slice(1)}
+                                : pathname.slice(1)} */}
+                            salom
                         </h1>
                         <span>{date.toDateString()}</span>
                     </div>
                     <div className='flex gap-[3px] items-center p-[14px] border-[1px] border-solid border-[#ccc] rounded bg-[#2D303E]'>
-                        <div className='pb-2'>
+                        <div className=''>
                             <SearchOutlined />
                         </div>
                         <input
@@ -44,16 +47,18 @@ const AppRouters = () => {
                         />
                     </div>
                 </div>
-                <div className="pl-[10px] pr-[40px]">
-                    <Routes>
-                        {routers.map((item) => (
-                            <Route
-                                key={item.id}
-                                path={item.path}
-                                element={item.element}
-                            />
-                        ))}
-                    </Routes>
+                <div className='pl-[10px] pr-[40px]'>
+                    <Suspense fallback={<Loading />}>
+                        <Routes>
+                            {routers.map((item) => (
+                                <Route
+                                    key={item.id}
+                                    path={item.path}
+                                    element={item.element}
+                                />
+                            ))}
+                        </Routes>
+                    </Suspense>
                 </div>
             </div>
         </div>

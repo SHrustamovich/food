@@ -5,7 +5,22 @@ const AntdProvider = ({ children }) => {
         <ConfigProvider
             theme={{
                 token: {},
-                components: {},
+                components: {
+                    Tabs: {
+                        itemActiveColor: "#EA7C69",
+                        itemSelectedColor: "#EA7C69",
+                        itemHoverColor: "#EA7C69",
+                        colorPrimaryBorder: "#EA7C69",
+                        inkBarColor: "#EA7C69",
+                    },
+                    Select: {
+                        selectorBg: "#1F1D2B",
+                        optionSelectedColor: "#fff",
+                        colorText: "#fff",
+                        colorIcon: "#166199",
+                        colorIconHover: "#fff",
+                    },
+                },
             }}>
             {children}
         </ConfigProvider>

@@ -1,5 +1,6 @@
 import React from "react";
 import { Tabs } from "antd";
+import HomeMain from "./homeMain";
 
 const onChange = (key) => {
     console.log(key);
@@ -9,7 +10,7 @@ const items = [
     {
         key: "1",
         label: "Hot Dishes",
-        children: "Companents",
+        children: <HomeMain/>,
     },
     {
         key: "2",

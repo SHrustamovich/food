@@ -25,17 +25,22 @@ export const routers = [
     },
     {
         id: 4,
-        path: "/settings",
-        element: <SettingsPage />,
-    },
-    {
-        id: 5,
         path: "/messega",
         element: <MessagePage />,
     },
     {
-        id: 6,
+        id: 5,
         path: "/notification",
         element: <NotificationPage />,
+    },
+    {
+        id: 6,
+        path: "/settings",
+        element: <SettingsPage />,
+    },
+    {
+        id: 7,
+        path: "/exit",
+        element: <SettingsPage />,
     },
 ];
