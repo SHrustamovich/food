@@ -1,4 +1,5 @@
-import MenuBar from "../../components/menuBar";
+import MenuBar from "./features/menuBar";
+import HomeHeader from "./features/homeHeader";
 
 const HomePage = () => {
     return (
