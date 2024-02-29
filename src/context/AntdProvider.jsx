@@ -26,6 +26,9 @@ const AntdProvider = ({ children }) => {
                         colorIcon: "#fff",
                         colorIconHover: "red",
                     },
+                    Input: {
+                        hoverBg: "#2D303E",
+                    },
                 },
             }}>
             {children}
