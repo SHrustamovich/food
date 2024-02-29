@@ -20,6 +20,12 @@ const AntdProvider = ({ children }) => {
                         colorIcon: "#166199",
                         colorIconHover: "#fff",
                     },
+                    Drawer: {
+                        colorBgElevated: "#1F1D2B",
+                        colorText: "#fff",
+                        colorIcon: "#fff",
+                        colorIconHover: "red",
+                    },
                 },
             }}>
             {children}
