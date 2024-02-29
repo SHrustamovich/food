@@ -20,4 +20,25 @@ export const foodData = [
         price: "2.29",
         text: "20 Bowls available",
     },
+    {
+        id: 4,
+        img: "https://foodtodo.ru/image/cache/catalog/pizza/kisspng-pizza-hut-pizza-delivery-cheese-menu-pizza-emoji-5b0bab99aa3818.9621927315274914816972-800x800.png",
+        title: "Spicy seasoned seafood noodles",
+        price: "2.29",
+        text: "20 Bowls available",
+    },
+    {
+        id: 5,
+        img: "https://foodtodo.ru/image/cache/catalog/pizza/kisspng-pizza-hut-pizza-delivery-cheese-menu-pizza-emoji-5b0bab99aa3818.9621927315274914816972-800x800.png",
+        title: "Spicy seasoned seafood noodles",
+        price: "2.29",
+        text: "20 Bowls available",
+    },
+    {
+        id: 6,
+        img: "https://foodtodo.ru/image/cache/catalog/pizza/kisspng-pizza-hut-pizza-delivery-cheese-menu-pizza-emoji-5b0bab99aa3818.9621927315274914816972-800x800.png",
+        title: "Spicy seasoned seafood noodles",
+        price: "2.29",
+        text: "20 Bowls available",
+    },
 ];
